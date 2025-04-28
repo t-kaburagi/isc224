@@ -13,13 +13,13 @@ int main(void){
     }
 
     if(pid == 0) {
-       //子プロセス
+       //蟄舌�励Ο繧ｻ繧ｹ
        printf("I'm child, my-pid=%d, child-pid=%d\n", getpid(), pid);
        printf("Sleeping 20sec...\n");
        sleep(20);
        printf("Child exiting\n");
     }else{
-      //親プロセス
+      //隕ｪ繝励Ο繧ｻ繧ｹ
       printf("I'm parent, my-pid=%d, child-pid=%d\n", getpid(), pid);
       printf("Waiting child\n");
       //exit(-1);
